@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5FG7r4el5bfBfsRwD/0mGcQMyHeMoSQTfZZxqhf539usdoKWMzr5e3HNdBIiZPAcMgTkYsPL64N1eQ4OYD0wvQ==",
+  "dgSpecHash": "hywBwfipbEvC6QkVmyw76b76vv0LuGEaFGtPzvksA93TM78S/geF4PuivMwYVQ6eSUYPSuR5dmogDhaRHqPykQ==",
   "success": true,
-  "projectFilePath": "/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Api/VacationHireInc.Api.csproj",
+  "projectFilePath": "/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/VacationHireInc.Api.csproj",
   "expectedPackageFiles": [
     "/Users/tenuvladgabriel/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/tenuvladgabriel/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
