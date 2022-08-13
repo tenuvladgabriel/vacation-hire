@@ -1,0 +1,1 @@
+namespace VacationHireInc.Business.Abstractions{    public interface IReservationService    {            }}

@@ -1,0 +1,1 @@
+namespace VacationHireInc.Data.Entities.Enums{    public enum VehicleFuelType    {        Gasoline,        Diesel,        Hybrid,        Electric    }}

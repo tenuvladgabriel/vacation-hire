@@ -1,0 +1,1 @@
+using System;namespace VacationHireInc.Business.Helpers{    public class ObjectNotFoundException : Exception    {        public ObjectNotFoundException(string id, Type type)            : base($"The entity of type {type} with id {id} was not found.")        {        }    }}

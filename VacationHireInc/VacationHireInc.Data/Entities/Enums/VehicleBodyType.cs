@@ -1,0 +1,1 @@
+namespace VacationHireInc.Data.Entities.Enums{    public enum VehicleBodyType    {        Truck,        Minivan,        Sedan    }}

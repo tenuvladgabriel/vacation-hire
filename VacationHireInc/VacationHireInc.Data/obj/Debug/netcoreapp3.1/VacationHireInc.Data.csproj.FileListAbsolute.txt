@@ -1,0 +1,12 @@
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/bin/Debug/netcoreapp3.1/VacationHireInc.Data.deps.json
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/bin/Debug/netcoreapp3.1/VacationHireInc.Data.dll
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/bin/Debug/netcoreapp3.1/VacationHireInc.Data.pdb
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.csprojAssemblyReference.cache
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.AssemblyInfoInputs.cache
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.AssemblyInfo.cs
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.csproj.CoreCompileInputs.cache
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.dll
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.pdb
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/bin/Debug/netcoreapp3.1/VacationHireInc.Data.runtimeconfig.json
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/bin/Debug/netcoreapp3.1/VacationHireInc.Data.runtimeconfig.dev.json
+/Users/tenuvladgabriel/Desktop/Project/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.genruntimeconfig.cache

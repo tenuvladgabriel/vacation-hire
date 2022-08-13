@@ -1,0 +1,1 @@
+using VacationHireInc.Business.Abstractions;namespace VacationHireInc.Business.Services{    public class ReceptionCardService : IReceptionCardService    {            }}

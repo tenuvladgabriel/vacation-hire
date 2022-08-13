@@ -1,0 +1,1 @@
+namespace VacationHireInc.Business.Helpers{    public class DatabaseConnectionFactory    {            }}

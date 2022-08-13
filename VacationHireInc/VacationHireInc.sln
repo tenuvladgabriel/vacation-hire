@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationHireInc.Api", "VacationHireInc.Api\VacationHireInc.Api.csproj", "{AA9A31AD-CF2B-4A1D-B46D-46EFEF77A315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationHireInc.Business", "VacationHireInc.Business\VacationHireInc.Business.csproj", "{3CDE5250-4E1F-4880-A472-DD7E057EF7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationHireInc.Data", "VacationHireInc.Data\VacationHireInc.Data.csproj", "{73086FB7-BB4D-492E-8EE5-4B6654AFA72A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA9A31AD-CF2B-4A1D-B46D-46EFEF77A315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9A31AD-CF2B-4A1D-B46D-46EFEF77A315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9A31AD-CF2B-4A1D-B46D-46EFEF77A315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9A31AD-CF2B-4A1D-B46D-46EFEF77A315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CDE5250-4E1F-4880-A472-DD7E057EF7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CDE5250-4E1F-4880-A472-DD7E057EF7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CDE5250-4E1F-4880-A472-DD7E057EF7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CDE5250-4E1F-4880-A472-DD7E057EF7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73086FB7-BB4D-492E-8EE5-4B6654AFA72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73086FB7-BB4D-492E-8EE5-4B6654AFA72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73086FB7-BB4D-492E-8EE5-4B6654AFA72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73086FB7-BB4D-492E-8EE5-4B6654AFA72A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
