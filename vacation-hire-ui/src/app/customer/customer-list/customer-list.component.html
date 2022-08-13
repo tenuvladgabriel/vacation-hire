@@ -1,0 +1,10 @@
+<ng-container *ngIf="data | async as $data">
+  <span *ngFor="let model of $data">
+    <h1>{{model.firstName}}</h1>
+    <h1>{{model.lastName}}</h1>
+    <h1>{{model.email}}</h1>
+    <h1>{{model.phoneNumber}}</h1>
+    <h1>{{model.country}}</h1>
+  </span>
+</ng-container>
+

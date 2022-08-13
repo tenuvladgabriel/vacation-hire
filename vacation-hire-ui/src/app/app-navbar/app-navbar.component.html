@@ -1,0 +1,21 @@
+<mat-sidenav class="sidenav" mode="side" [opened]="true">
+  <mat-nav-list>
+    <mat-accordion displayMode="flat">
+      <div *ngFor="let navItem of pages">
+        <mat-expansion-panel class="mat-elevation-z0" [hideToggle]="navItem.subPages.length === 0" (closed)="navItem.subPages">
+          <mat-expansion-panel-header class="nav-head" [expandedHeight]="'48px'">
+            <mat-panel-title class="nav-link">
+              <mat-icon>{{navItem.icon}}</mat-icon>
+              <span class="nav-link-text">{{navItem.name}}</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div class="nav-section">
+            <div *ngFor="let navPage of navItem.subPages" class="nav-item">
+              <a class="nav-link" [routerLink]="navPage.link" routerLinkActive="selected">{{navPage.name}}</a>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </div>
+    </mat-accordion>
+  </mat-nav-list>
+</mat-sidenav>
