@@ -1,0 +1,1 @@
+namespace VacationHireInc.Data.Entities.Abstraction{    public interface IIdEntity    {        string Id { get; set; }    }}

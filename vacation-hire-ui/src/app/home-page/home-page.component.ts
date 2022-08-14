@@ -6,16 +6,9 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 
-export class HomePageComponent implements OnInit {
+export class HomePageComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
 }
 
 export interface PeriodicElement {
@@ -36,23 +29,4 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
   {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 11, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 12, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 13, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 14, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 15, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 16, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 17, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 18, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 19, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 20, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 21, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 22, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 23, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 24, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 25, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 26, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 27, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 28, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  {position: 29, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];

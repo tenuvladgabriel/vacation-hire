@@ -1,10 +1,32 @@
-<ng-container *ngIf="data | async as $data">
-  <span *ngFor="let model of $data">
-    <h1>{{model.firstName}}</h1>
-    <h1>{{model.lastName}}</h1>
-    <h1>{{model.email}}</h1>
-    <h1>{{model.phoneNumber}}</h1>
-    <h1>{{model.country}}</h1>
-  </span>
-</ng-container>
+<app-header title="Customers" [hasCreateButton]="true" [createButtonUrl]="'customers/create'"></app-header>
 
+<div *ngIf="data | async as $data else empty" class="page-wrapper">
+  <mat-table [dataSource]="$data">
+    <ng-container matColumnDef="firstName">
+      <mat-header-cell *matHeaderCellDef> First name</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.firstName}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="lastName">
+      <mat-header-cell *matHeaderCellDef> Last name</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.lastName}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef> Email</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.email}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="phoneNumber">
+      <mat-header-cell *matHeaderCellDef> Phone</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.phoneNumber}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="country">
+      <mat-header-cell *matHeaderCellDef> Country</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.country}} </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row (click)="goToCustomerEditUrlAsync(row)" *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div>
+
+<ng-template #empty>
+  <app-no-data></app-no-data>
+</ng-template>

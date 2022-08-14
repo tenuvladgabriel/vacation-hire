@@ -1,9 +1,31 @@
-<div class="base-container">
-  <div class="navbar-container">
-    <app-navbar></app-navbar>
+<mat-toolbar class="mat-elevation-z8">
+  <div class="button-menu">
+    <button
+      mat-icon-button
+      *ngIf="sidenav.mode === 'over'"
+      (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened"> Open menu</mat-icon>
+      <mat-icon *ngIf="sidenav.opened"> Close menu</mat-icon>
+    </button>
   </div>
+  <span class="title">Vacation Hire Inc</span>
+</mat-toolbar>
 
-  <div class="body-content">
-    <router-outlet></router-outlet>
-  </div>
-</div>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+    <img class="avatar mat-elevation-z8" src="https://i.ibb.co/ZYZkDYj/Microsoft-Teams-image-3.png" alt=""/>
+    <h4 class="name">Vlad Tenu</h4>
+    <p class="designation">Software Engineer</p>
+    <mat-divider></mat-divider>
+    <ng-container *ngFor="let page of pages">
+      <button mat-button class="menu-button" [routerLink]="page.link">
+        <span>{{page.name}}</span>
+      </button>
+    </ng-container>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

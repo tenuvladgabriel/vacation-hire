@@ -89,16 +89,12 @@ l
 `VacationHireInc/VacationHireInc.Data/obj/VacationHireInc.Data.csproj.EntityFrameworkCore.targets,e/c/ecd5254376c6bfba29e30b7c9e0f1c1aa3f4e593
 ‚
 RVacationHireInc/VacationHireInc.Data/obj/VacationHireInc.Data.csproj.nuget.g.props,1/0/10b39008cce499e9f47c350517682fec75d5b5d7
-u
-EVacationHireInc/VacationHireInc.Api/Controllers/CustomerController.cs,d/d/dd5dfd3b72df64300976467ae8374e2d7a93600e
 „
 TVacationHireInc/VacationHireInc.Data/obj/VacationHireInc.Data.csproj.nuget.g.targets,a/4/a4d668f0ca2dcd380f2566e1ab63979e8043dc45
 ‰
 YVacationHireInc/VacationHireInc.Data/obj/VacationHireInc.Data.EntityFrameworkCore.targets,c/e/ced77322b94288becc3d382f7d65abc6b3d7f568
 ^
 .VacationHireInc/VacationHireInc.Api/Dockerfile,b/e/be9c4e9310f6c5b898fcbee32f2b550f68bd7168
-^
-.VacationHireInc/VacationHireInc.Api/Startup.cs,a/4/a469e635bff1dc3dc6f94b74f49d072c285ca8f9
 d
 4VacationHireInc/VacationHireInc.Api/appsettings.json,8/7/873c1bec62172e3ef2a7aa426f501a807624e7ee
 n

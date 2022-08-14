@@ -1,0 +1,1 @@
+using System;namespace VacationHireInc.Business.Helpers{    internal static class GenericMethods    {        internal static void CheckRequestData<T>(T data) where T : class        {            if (data == null)            {                throw new ArgumentNullException();            }        }    }}

@@ -140,3 +140,6 @@
 /Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.dll
 /Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.pdb
 /Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.genruntimeconfig.cache
+/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
