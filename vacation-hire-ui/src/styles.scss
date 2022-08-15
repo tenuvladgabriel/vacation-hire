@@ -55,3 +55,9 @@ form {
     background-color: hsla(203, 100%, 48%, 1);
   }
 }
+
+mat-row {
+  :hover {
+    cursor: pointer;
+  }
+}

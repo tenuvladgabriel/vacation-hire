@@ -1,1 +1,0 @@
-using VacationHireInc.Business.Abstractions;namespace VacationHireInc.Business.Services{    public class VehicleService : IVehicleService    {            }}

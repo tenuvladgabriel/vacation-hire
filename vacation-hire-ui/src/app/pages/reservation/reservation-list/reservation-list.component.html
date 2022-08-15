@@ -1,0 +1,24 @@
+<app-header title="Reservations" [hasCreateButton]="true" [createButtonUrl]="createUrl"></app-header>
+
+<div *ngIf="data | async as $data else empty" class="page-wrapper">
+  <mat-table [dataSource]="$data">
+    <ng-container matColumnDef="rentalStartDate">
+      <mat-header-cell *matHeaderCellDef> Rental start date</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.rentalStartDate | date}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="rentalExpirationDate">
+      <mat-header-cell *matHeaderCellDef> Rental expiration date</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.rentalExpirationDate | date}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="status">
+      <mat-header-cell *matHeaderCellDef> Status</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.status}} </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row (click)="goToReservationEditUrlAsync(row)" *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div>
+
+<ng-template #empty>
+  <app-no-data></app-no-data>
+</ng-template>

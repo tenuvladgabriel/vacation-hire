@@ -1,4 +1,4 @@
-<app-header title="Customers" [hasCreateButton]="true" [createButtonUrl]="'customers/create'"></app-header>
+<app-header title="Customers" [hasCreateButton]="true" [createButtonUrl]="createUrl"></app-header>
 
 <div *ngIf="data | async as $data else empty" class="page-wrapper">
   <mat-table [dataSource]="$data">

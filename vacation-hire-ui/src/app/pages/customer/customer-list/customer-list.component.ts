@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {CustomerService} from "../../services/customer.service";
 import {Observable} from "rxjs";
-import {ICustomer} from "../../dtos/customer";
 import {Router} from "@angular/router";
+import {ICustomer} from "../../../dtos/customer";
+import {CustomerService} from "../../../services/customer.service";
 
 @Component({
   selector: 'app-customer-list',
@@ -11,10 +11,11 @@ import {Router} from "@angular/router";
 })
 export class CustomerListComponent implements OnInit {
   data: Observable<ICustomer[]> | undefined;
+  createUrl = 'customers/create';
   displayedColumns: string[] = ['firstName', 'lastName', 'email', 'phoneNumber', 'country'];
 
   constructor(private router: Router,
-    private customerService: CustomerService) {
+              private customerService: CustomerService) {
   }
 
   ngOnInit(): void {

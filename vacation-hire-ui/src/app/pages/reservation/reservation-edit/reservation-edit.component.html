@@ -1,0 +1,26 @@
+<app-header [title]="title"></app-header>
+
+<div class="page-wrapper">
+  <form [formGroup]="form" class="form">
+    <app-mat-form-select [form]="form" [propertyFormName]="'customerId'" [labelName]="'Customers'" [data]="customers | async"></app-mat-form-select>
+    <app-mat-form-select [form]="form" [propertyFormName]="'status'" [labelName]="'Status'" [data]="statuses"
+                         [display]="reservationId !== undefined"></app-mat-form-select>
+    <mat-form-field appearance="fill">
+      <mat-label>Vehicles</mat-label>
+      <mat-select [formControlName]="'vehicleIds'" multiple required>
+        <mat-option *ngFor="let option of vehicles | async" [value]="option.value">
+          {{option.name}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="form.get('vehicleIds')?.hasError('required')">Please choose a value</mat-error>
+    </mat-form-field>
+    <app-mat-form-date [form]="form" [propertyFormName]="'rentalStartDate'" [labelName]="'Rental start date'"></app-mat-form-date>
+    <app-mat-form-date [form]="form" [propertyFormName]="'rentalExpirationDate'" [labelName]="'Rental expiration date'"></app-mat-form-date>
+  </form>
+
+  <div class="actions-wrapper">
+    <button mat-raised-button class="save" (click)="onSave()">Save</button>
+    <button mat-raised-button color="warn" (click)="onDelete()" *ngIf="reservationId">Delete</button>
+    <button mat-raised-button class="cancel" (click)="onCancelAsync()">Cancel</button>
+  </div>
+</div>

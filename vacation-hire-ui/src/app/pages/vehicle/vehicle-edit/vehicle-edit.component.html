@@ -1,0 +1,21 @@
+<app-header [title]="title"></app-header>
+
+<div class="page-wrapper">
+  <form [formGroup]="form" class="form">
+    <app-mat-form-input [form]="form" [propertyFormName]="'name'" [labelName]="'Name'"></app-mat-form-input>
+    <app-mat-form-input [form]="form" [propertyFormName]="'color'" [labelName]="'Color'"></app-mat-form-input>
+    <app-mat-form-input [form]="form" [propertyFormName]="'numberOfMiles'" [labelName]="'Miles'" [inputType]="'number'"></app-mat-form-input>
+    <app-mat-form-input [form]="form" [propertyFormName]="'price'" [labelName]="'Price'" [inputType]="'number'"></app-mat-form-input>
+    <app-mat-form-select [form]="form" [propertyFormName]="'bodyType'" [labelName]="'Body'" [data]="bodyTypes"></app-mat-form-select>
+    <app-mat-form-select [form]="form" [propertyFormName]="'brandType'" [labelName]="'Brand'" [data]="brandTypes"></app-mat-form-select>
+    <app-mat-form-select [form]="form" [propertyFormName]="'fuelType'" [labelName]="'Fuel'" [data]="fuelTypes"></app-mat-form-select>
+    <app-mat-form-select [form]="form" [propertyFormName]="'availabilityStatus'" [labelName]="'Availability'" [data]="availabilityStatuses"
+                         [display]="vehicleId !== undefined"></app-mat-form-select>
+  </form>
+
+  <div class="actions-wrapper">
+    <button mat-raised-button class="save" (click)="onSave()">Save</button>
+    <button mat-raised-button color="warn" (click)="onDelete()" *ngIf="vehicleId">Delete</button>
+    <button mat-raised-button class="cancel" (click)="onCancelAsync()">Cancel</button>
+  </div>
+</div>

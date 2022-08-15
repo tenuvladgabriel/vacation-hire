@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {pages} from "../../services/constants";
+import {pages} from "../../services/helper";
 
 @Component({
   selector: 'app-root',

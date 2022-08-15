@@ -1,0 +1,9 @@
+<form [formGroup]="form" class="form">
+  <mat-form-field appearance="standard">
+    <mat-label>{{labelName}}</mat-label>
+    <input matInput [placeholder]="labelName" [type]="inputType" [formControlName]="propertyFormName">
+    <mat-error *ngIf="!form.get(propertyFormName)?.valid && form.get(propertyFormName)?.touched">
+      {{ labelName + ' is invalid' }}
+    </mat-error>
+  </mat-form-field>
+</form>

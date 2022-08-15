@@ -1,1 +1,0 @@
-import {Page} from "../components/app/app.component";export const appUrl = 'https://localhost:5001';export const pages: Page[] = [  {    name: 'Home',    link: '/home'  },  {    name: 'Customers',    link: '/customers'  },  {    name: 'Reservations',    link: '/reservations'  }];

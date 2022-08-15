@@ -1,0 +1,44 @@
+<app-header title="Vehicles" [hasCreateButton]="true" [createButtonUrl]="createUrl"></app-header>
+
+<div *ngIf="data | async as $data else empty" class="page-wrapper">
+  <mat-table [dataSource]="$data">
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="color">
+      <mat-header-cell *matHeaderCellDef> Color</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.color}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="numberOfMiles">
+      <mat-header-cell *matHeaderCellDef> Miles</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.numberOfMiles}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef> Price</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.price}}$</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="availabilityStatus">
+      <mat-header-cell *matHeaderCellDef> Availability</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.availabilityStatus}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="bodyType">
+      <mat-header-cell *matHeaderCellDef> Body</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.bodyType}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="brandType">
+      <mat-header-cell *matHeaderCellDef> Brand</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.brandType}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="fuelType">
+      <mat-header-cell *matHeaderCellDef> Fuel</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.fuelType}} </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row (click)="goToVehicleEditUrlAsync(row)" *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div>
+
+<ng-template #empty>
+  <app-no-data></app-no-data>
+</ng-template>

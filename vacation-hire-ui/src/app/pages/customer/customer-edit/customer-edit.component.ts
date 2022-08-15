@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {ActivatedRoute, Router} from "@angular/router";
-import {CustomerService} from "../../services/customer.service";
 import {filter, map, switchMap} from "rxjs";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {CustomerService} from "../../../services/customer.service";
+import {errorSnackBar, successSnackBar} from "../../../services/helper";
 
 @Component({
   selector: 'app-customer-edit',
@@ -39,7 +40,7 @@ export class CustomerEditComponent implements OnInit {
     ).subscribe();
   }
 
-  createForm(): FormGroup {
+  private createForm(): FormGroup {
     const emailRegex: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     return this.formBuilder.group({
       firstName: [null, Validators.required],
@@ -56,10 +57,10 @@ export class CustomerEditComponent implements OnInit {
       const save = this.customerId ? this.customerService.update(this.customerId, model) : this.customerService.insert(model);
       save.subscribe({
         next: async () => {
-          this.openSnackBar('Data was successfully saved', 'Success', 'snack-success')
-          await this.router.navigate(['customers']);
+          successSnackBar(this._snackBar);
+          await this.goToCustomerListAsync();
         },
-        error: () => this.openSnackBar('An error has occurred', 'Error', 'snack-error')
+        error: () => errorSnackBar(this._snackBar)
       });
     }
   }
@@ -67,19 +68,18 @@ export class CustomerEditComponent implements OnInit {
   onDelete() {
     this.customerService.delete(this.customerId as string).subscribe({
       next: async () => {
-        this.openSnackBar('Data was successfully deleted', 'Success', 'snack-success')
-        await this.router.navigate(['customers']);
+        successSnackBar(this._snackBar);
+        await this.goToCustomerListAsync();
       },
-      error: () => this.openSnackBar('An error has occurred', 'Error', 'snack-error')
+      error: () => errorSnackBar(this._snackBar)
     });
   }
 
   async onCancelAsync() {
+    await this.goToCustomerListAsync();
+  }
+
+  async goToCustomerListAsync() {
     await this.router.navigate(['customers']);
   }
-
-  openSnackBar(message: string, action: string, styleClass: string) {
-    this._snackBar.open(message, action, {verticalPosition: 'top', panelClass: [styleClass], duration: 1000});
-  }
-
 }

@@ -1,0 +1,1 @@
+export interface IReceptionCard {  id: string;  objectCondition: ReceptionCardObjectConditionType;  objectType: ReceptionCardObjectType;  occuredAt: Date;  fuelLevel: number;  reservationId: string;}export type ReceptionCardObjectConditionType = 'VeryGood' | 'Degraded' | 'Destroyed';export type ReceptionCardObjectType = 'Vehicle';

@@ -1,1 +1,1 @@
-namespace VacationHireInc.Business.Abstractions{    public interface IVehicleService    {            }}
+using System.Collections.Generic;using System.Threading.Tasks;using VacationHireInc.Business.Services.Vehicle.Dtos;namespace VacationHireInc.Business.Abstractions{    public interface IVehicleService    {        Task<List<VehicleDto>> GetListAsync();        Task<VehicleDto> GetDetailsAsync(string id);        Task CreateAsync(VehicleDto dto);        Task UpdateAsync(string id, VehicleDto dto);        Task DeleteAsync(string id);    }}
