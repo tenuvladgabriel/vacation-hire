@@ -1,0 +1,1 @@
+namespace VacationHireInc.Business.Services.GeneralDtos{    public class OptionDto    {        public string Name { get; set; }        public string Value { get; set; }    }}

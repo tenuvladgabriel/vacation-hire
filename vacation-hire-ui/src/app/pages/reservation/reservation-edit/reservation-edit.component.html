@@ -7,12 +7,12 @@
                          [display]="reservationId !== undefined"></app-mat-form-select>
     <mat-form-field appearance="fill">
       <mat-label>Vehicles</mat-label>
-      <mat-select [formControlName]="'vehicleIds'" multiple required>
-        <mat-option *ngFor="let option of vehicles | async" [value]="option.value">
+      <mat-select [formControlName]="'vehicles'" multiple required>
+        <mat-option *ngFor="let option of vehicles | async" [value]="option">
           {{option.name}}
         </mat-option>
       </mat-select>
-      <mat-error *ngIf="form.get('vehicleIds')?.hasError('required')">Please choose a value</mat-error>
+      <mat-error *ngIf="form.get('vehicles')?.hasError('required')">Please choose a value</mat-error>
     </mat-form-field>
     <app-mat-form-date [form]="form" [propertyFormName]="'rentalStartDate'" [labelName]="'Rental start date'"></app-mat-form-date>
     <app-mat-form-date [form]="form" [propertyFormName]="'rentalExpirationDate'" [labelName]="'Rental expiration date'"></app-mat-form-date>

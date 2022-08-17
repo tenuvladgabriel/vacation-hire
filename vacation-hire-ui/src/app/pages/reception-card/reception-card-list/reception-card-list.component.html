@@ -1,0 +1,28 @@
+<app-header title="Reception cards" [hasCreateButton]="true" [createButtonUrl]="createUrl"></app-header>
+
+<div *ngIf="data | async as $data else empty" class="page-wrapper">
+  <mat-table [dataSource]="$data">
+    <ng-container matColumnDef="objectCondition">
+      <mat-header-cell *matHeaderCellDef> Object condition</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.objectCondition}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="occuredAt">
+      <mat-header-cell *matHeaderCellDef> Check out</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.occuredAt | date}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="objectType">
+      <mat-header-cell *matHeaderCellDef> Object type</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.objectType}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="fuelLevel">
+      <mat-header-cell *matHeaderCellDef> Fuel level</mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.fuelLevel}} </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row (click)="goToReceptionCardEditUrlAsync(row)" *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div>
+
+<ng-template #empty>
+  <app-no-data></app-no-data>
+</ng-template>

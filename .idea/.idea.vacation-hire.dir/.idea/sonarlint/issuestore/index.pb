@@ -39,8 +39,6 @@ EVacationHireInc/VacationHireInc.Data/FluentDbConfigs/VehicleConfig.cs,5/6/56a7
 MVacationHireInc/VacationHireInc.Data/Migrations/VacationHireContextFactory.cs,5/b/5b7595295bdca51cd3dc3a42f76d83ff4147a16f
 ‹
 [VacationHireInc/VacationHireInc.Data/Migrations/20220813115805_InitialMigration.Designer.cs,6/4/64c5c611e9aed361f0eb92e7600c6254a99503c5
-o
-?VacationHireInc/VacationHireInc.Data/Abstraction/IRepository.cs,4/2/428780d2b51d725a8fb8f58885dd3718a35f0594
 v
 FVacationHireInc/VacationHireInc.Data/FluentDbConfigs/CustomerConfig.cs,1/9/19814a50b13bbe265f3d1f2856805972312fa9cc
 i
@@ -49,16 +47,10 @@ i
 SVacationHireInc/VacationHireInc.Data/Migrations/VacationHireContextModelSnapshot.cs,7/e/7e32c7c0c9afa9cd0d0814793d36a8442eab2da0
 ‚
 RVacationHireInc/VacationHireInc.Data/Migrations/20220813115805_InitialMigration.cs,8/e/8e9b37c08ed1089411c3d74b29f96d3f0a1f0672
-x
-HVacationHireInc/VacationHireInc.Business/Abstractions/IVehicleService.cs,3/5/35e095ce74ebd3db5426db47e3505096b4e64cb2
-~
-NVacationHireInc/VacationHireInc.Business/Abstractions/IReceptionCardService.cs,0/1/01c0d8ec94f36bffc64887030fc344dc7404da1d
 y
 IVacationHireInc/VacationHireInc.Business/Abstractions/ICustomerService.cs,4/f/4f21ae28bed94e136b1ad4ae631686250774f585
 y
 IVacationHireInc/VacationHireInc.Business/Services/ReceptionCardService.cs,2/7/27b4b246bf661845f7d7bf6e8230e2bba17503ff
-ƒ
-SVacationHireInc/VacationHireInc.Business/Extensions/RegistrationServiceExtension.cs,9/d/9d1f2fc990153f27b857fb45bfce360efd33de3a
 |
 LVacationHireInc/VacationHireInc.Business/Abstractions/IReservationService.cs,9/1/91e862a75f2f7dd92d4aaf9ab3c03d115b8e4a4d
 }
@@ -101,8 +93,6 @@ n
 >VacationHireInc/VacationHireInc.Api/VacationHireInc.Api.csproj,d/8/d8ec2fc0181617d1923f19ff429ffcc6f6287485
 S
 #VacationHireInc/VacationHireInc.sln,8/a/8a63d1ff778a7642c50a4dbb61d372db7a5b0b33
-b
-2VacationHireInc/VacationHireInc.Data/Repository.cs,3/3/3362f2574e8073dc52e836faffae8bdead44fe6e
 a
 1VacationHireInc/VacationHireInc.Data/Constants.cs,4/9/4955eff37b1545b7a8ec7a6bb9477c41082e8d0a
 p

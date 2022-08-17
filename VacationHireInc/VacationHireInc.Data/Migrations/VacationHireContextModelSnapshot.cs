@@ -55,6 +55,9 @@ namespace VacationHireInc.Data.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("text");
 
+                    b.Property<string>("Currency")
+                        .HasColumnType("text");
+
                     b.Property<decimal>("FuelLevel")
                         .HasColumnType("numeric");
 
@@ -69,6 +72,9 @@ namespace VacationHireInc.Data.Migrations
 
                     b.Property<string>("ReservationId")
                         .HasColumnType("text");
+
+                    b.Property<decimal>("TotalInvoice")
+                        .HasColumnType("numeric");
 
                     b.HasKey("Id");
 

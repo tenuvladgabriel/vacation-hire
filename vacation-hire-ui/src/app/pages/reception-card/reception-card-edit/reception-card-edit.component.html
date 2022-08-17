@@ -1,0 +1,25 @@
+<app-header [title]="title"></app-header>
+
+<div class="page-wrapper">
+  <form [formGroup]="form" class="form">
+    <app-mat-form-select [form]="form" [propertyFormName]="'reservationId'" [labelName]="'Reservation'"
+                         [data]="reservations | async"></app-mat-form-select>
+    <app-mat-form-select [form]="form" [propertyFormName]="'currency'" [labelName]="'Choose your currency'"
+                         [data]="currencies | async"></app-mat-form-select>
+    <app-mat-form-select [form]="form" [propertyFormName]="'objectCondition'" [labelName]="'Object condition'"
+                         [data]="objectConditions"></app-mat-form-select>
+    <app-mat-form-select [form]="form" [propertyFormName]="'objectType'" [labelName]="'Object type'" [data]="objectTypes"></app-mat-form-select>
+    <app-mat-form-input [form]="form" [propertyFormName]="'fuelLevel'" [labelName]="'Fuel level'" [inputType]="'number'"></app-mat-form-input>
+    <app-mat-form-date [form]="form" [propertyFormName]="'occuredAt'" [labelName]="'Check out'"></app-mat-form-date>
+  </form>
+
+  <div class="total-cost-wrapper" *ngIf="totalCost | async as $total">
+    <span>Your bill total is : <span class="total">{{$total}} {{form.get('currency')?.value}}</span></span>
+  </div>
+
+  <div class="actions-wrapper">
+    <button mat-raised-button class="save" (click)="onSave()">Save</button>
+    <button mat-raised-button color="warn" (click)="onDelete()" *ngIf="receptionCardId">Delete</button>
+    <button mat-raised-button class="cancel" (click)="onCancelAsync()">Cancel</button>
+  </div>
+</div>

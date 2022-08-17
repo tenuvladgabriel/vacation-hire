@@ -4,68 +4,77 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4592128-9a97-4f0b-811b-e0f7690894e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Controllers/ReceptionCardController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Controllers/VehicleController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/ReceptionCard/Dtos/ReceptionCardDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/ReceptionCard/ReceptionCardService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Vehicle/Dtos/VehicleDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Vehicle/VehicleService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/dtos/reception-card.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/dtos/reservation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/dtos/vehicle.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/customer/customer-list/customer-list.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/vehicle/helper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/helper.ts" afterDir="false" />
+    <list default="true" id="d4592128-9a97-4f0b-811b-e0f7690894e0" name="Changes" comment="Implement vehicle, reservation and reception service.&#10;Add list and edit page for vehicle and reservation page + some ui improvements.">
+      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Controllers/CurrencyController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Abstractions/ICurrencyService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Extensions/HttpClientExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Currency/CurrencyService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Currency/Dtos/CurrencyConvertDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Currency/Dtos/CurrencyListDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/GeneralDtos/OptionDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vacation-hire.dir/.idea/sonarlint/issuestore/0/1/01c0d8ec94f36bffc64887030fc344dc7404da1d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vacation-hire.dir/.idea/sonarlint/issuestore/3/3/3362f2574e8073dc52e836faffae8bdead44fe6e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vacation-hire.dir/.idea/sonarlint/issuestore/3/5/35e095ce74ebd3db5426db47e3505096b4e64cb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vacation-hire.dir/.idea/sonarlint/issuestore/4/2/428780d2b51d725a8fb8f58885dd3718a35f0594" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vacation-hire.dir/.idea/sonarlint/issuestore/9/d/9d1f2fc990153f27b857fb45bfce360efd33de3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vacation-hire.dir/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.vacation-hire.dir/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.vacation-hire.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.vacation-hire.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/.idea/.idea.VacationHireInc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/.idea/.idea.VacationHireInc/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Controllers/ReservationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Controllers/ReservationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Controllers/VehicleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Controllers/VehicleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Api.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Business.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/VacationHireInc.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/obj/Debug/netcoreapp3.1/VacationHireInc.Api.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Abstractions/IReceptionCardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Abstractions/IReceptionCardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Abstractions/IReservationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Abstractions/IReservationService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Abstractions/IVehicleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Abstractions/IVehicleService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Extensions/RegistrationServiceExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Extensions/RegistrationServiceExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/ReceptionCardService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Extensions/RepositoryExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Extensions/RepositoryExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Helpers/DatabaseConnectionFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Customer/CustomerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Customer/CustomerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/ReceptionCard/Dtos/ReceptionCardDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/ReceptionCard/Dtos/ReceptionCardDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/ReceptionCard/ReceptionCardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/ReceptionCard/ReceptionCardService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Reservation/Dtos/ReservationDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Reservation/Dtos/ReservationDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Reservation/ReservationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Reservation/ReservationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/VehicleService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Vehicle/VehicleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Vehicle/VehicleService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/VacationHireInc.Business.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/VacationHireInc.Business.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Business.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Business.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Business.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Abstraction/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Abstraction/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Repository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Entities/Abstraction/IRentalEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Entities/Abstraction/IRentalEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Entities/ReceptionCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Entities/ReceptionCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/FluentDbConfigs/ReceptionCardConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/FluentDbConfigs/ReceptionCardConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Migrations/VacationHireContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/Migrations/VacationHireContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/bin/Debug/netcoreapp3.1/VacationHireInc.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/bin/Debug/netcoreapp3.1/VacationHireInc.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/bin/Debug/netcoreapp3.1/VacationHireInc.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/bin/Debug/netcoreapp3.1/VacationHireInc.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/VacationHireInc/VacationHireInc.Data/obj/Debug/netcoreapp3.1/VacationHireInc.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/components/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/components/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/customer/customer-edit/customer-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/customer/customer-edit/customer-edit.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/customer/customer-edit/customer-edit.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/customer/customer-edit/customer-edit.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/customer/customer-list/customer-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/customer/customer-list/customer-list.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/customer/customer-list/customer-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/home-page/home-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/home-page/home-page.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/home-page/home-page.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/home-page/home-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/components/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/components/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/dtos/reservation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/dtos/reservation.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/modules/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/modules/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/constants.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/customer.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/reservation/reservation-edit/reservation-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/reservation/reservation-edit/reservation-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/reservation/reservation-edit/reservation-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/pages/reservation/reservation-edit/reservation-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/reservation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/reservation.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/vehicle.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vacation-hire-ui/src/app/services/vehicle.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +100,7 @@
     <setting file="mock:///Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vacation-hire-ui/package-lock.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/VacationHireInc/VacationHireInc.Business/Services/Reservation/ReservationService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/VacationHireInc/VacationHireInc.Api/Controllers/CustomerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/Controllers/CustomerController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -126,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660396884941</updated>
       <workItem from="1660396891032" duration="173000" />
-      <workItem from="1660397343311" duration="38294000" />
+      <workItem from="1660397343311" duration="48602000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <created>1660396999500</created>
@@ -149,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660403572907</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implement vehicle, reservation and reception service.&#10;Add list and edit page for vehicle and reservation page + some ui improvements.">
+      <created>1660570083369</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660570083369</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +191,7 @@
     <MESSAGE value="initial commit." />
     <MESSAGE value="add angular client" />
     <MESSAGE value="initial configurations for angular pages and add Cors for angular route." />
-    <option name="LAST_COMMIT_MESSAGE" value="initial configurations for angular pages and add Cors for angular route." />
+    <MESSAGE value="Implement vehicle, reservation and reception service.&#10;Add list and edit page for vehicle and reservation page + some ui improvements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement vehicle, reservation and reception service.&#10;Add list and edit page for vehicle and reservation page + some ui improvements." />
   </component>
 </project>

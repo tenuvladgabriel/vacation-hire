@@ -16,13 +16,16 @@ import {VehicleService} from "./services/vehicle.service";
 import {HomePageComponent} from "./pages/home-page/home-page.component";
 import {CustomerListComponent} from "./pages/customer/customer-list/customer-list.component";
 import {CustomerEditComponent} from "./pages/customer/customer-edit/customer-edit.component";
-import { ReservationEditComponent } from './pages/reservation/reservation-edit/reservation-edit.component';
-import { ReservationListComponent } from './pages/reservation/reservation-list/reservation-list.component';
-import { VehicleEditComponent } from './pages/vehicle/vehicle-edit/vehicle-edit.component';
-import { VehicleListComponent } from './pages/vehicle/vehicle-list/vehicle-list.component';
-import { MatFormInputComponent } from './components/mat-form-input/mat-form-input.component';
-import { MatFormDateComponent } from './components/mat-form-date/mat-form-date.component';
-import { MatFormSelectComponent } from './components/mat-form-select/mat-form-select.component';
+import {ReservationEditComponent} from './pages/reservation/reservation-edit/reservation-edit.component';
+import {ReservationListComponent} from './pages/reservation/reservation-list/reservation-list.component';
+import {VehicleEditComponent} from './pages/vehicle/vehicle-edit/vehicle-edit.component';
+import {VehicleListComponent} from './pages/vehicle/vehicle-list/vehicle-list.component';
+import {MatFormInputComponent} from './components/mat-form-input/mat-form-input.component';
+import {MatFormDateComponent} from './components/mat-form-date/mat-form-date.component';
+import {MatFormSelectComponent} from './components/mat-form-select/mat-form-select.component';
+import {ReceptionCardEditComponent} from './pages/reception-card/reception-card-edit/reception-card-edit.component';
+import {ReceptionCardListComponent} from './pages/reception-card/reception-card-list/reception-card-list.component';
+import {CurrencyService} from "./services/currency.service";
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { MatFormSelectComponent } from './components/mat-form-select/mat-form-se
     VehicleListComponent,
     MatFormInputComponent,
     MatFormDateComponent,
-    MatFormSelectComponent
+    MatFormSelectComponent,
+    ReceptionCardEditComponent,
+    ReceptionCardListComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +58,7 @@ import { MatFormSelectComponent } from './components/mat-form-select/mat-form-se
     ReservationService,
     ReceptionCardService,
     VehicleService,
+    CurrencyService,
     {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'fill'}}
   ],
   bootstrap: [AppComponent]

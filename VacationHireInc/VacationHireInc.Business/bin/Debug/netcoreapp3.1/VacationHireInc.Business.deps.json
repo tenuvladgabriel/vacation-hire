@@ -10,7 +10,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.28",
           "VacationHireInc.Data": "1.0.0",
-          "Z.EntityFramework.Extensions.EFCore": "3.14.3"
+          "Z.EntityFramework.Extensions.EFCore": "3.14.3",
+          "Microsoft.Extensions.Http": "3.1.25.0"
         },
         "runtime": {
           "VacationHireInc.Business.dll": {}
@@ -1392,6 +1393,14 @@
         "runtime": {
           "VacationHireInc.Data.dll": {}
         }
+      },
+      "Microsoft.Extensions.Http/3.1.25.0": {
+        "runtime": {
+          "Microsoft.Extensions.Http.dll": {
+            "assemblyVersion": "3.1.25.0",
+            "fileVersion": "3.100.2522.21804"
+          }
+        }
       }
     }
   },
@@ -2348,6 +2357,11 @@
     },
     "VacationHireInc.Data/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Http/3.1.25.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

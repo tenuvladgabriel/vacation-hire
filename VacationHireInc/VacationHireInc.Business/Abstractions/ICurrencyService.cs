@@ -1,0 +1,1 @@
+using System.Collections.Generic;using System.Threading.Tasks;using VacationHireInc.Business.Services.GeneralDtos;namespace VacationHireInc.Business.Abstractions{    public interface ICurrencyService    {        Task<List<OptionDto>> GetListAsync();        Task<double> ConvertCurrencyAsync(double amount, string currencyForConvert);    }}

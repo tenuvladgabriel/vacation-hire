@@ -22,3 +22,4 @@
 /Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csproj.CopyComplete
 /Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.dll
 /Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.pdb
+/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Http.dll

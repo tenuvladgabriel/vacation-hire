@@ -4,7 +4,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {ReservationService} from "../../../services/reservation.service";
 import {errorSnackBar, IOption, successSnackBar} from "../../../services/helper";
-import {filter, map, Observable, switchMap} from "rxjs";
+import {BehaviorSubject, filter, map, Observable, switchMap} from "rxjs";
 import {CustomerService} from "../../../services/customer.service";
 import {VehicleService} from "../../../services/vehicle.service";
 
@@ -20,7 +20,7 @@ export class ReservationEditComponent implements OnInit {
   title = 'Reservation';
   statuses: IOption[] = [];
   customers: Observable<IOption[]> = new Observable<IOption[]>();
-  vehicles: Observable<IOption[]> = new Observable<IOption[]>();
+  vehicles: BehaviorSubject<IOption[]> = new BehaviorSubject<IOption[]>([]);
 
   constructor(private reservationService: ReservationService,
               private customerService: CustomerService,
@@ -40,13 +40,22 @@ export class ReservationEditComponent implements OnInit {
       switchMap(params => {
         this.reservationId = params['id'];
         this.mapStatuses();
-        return this.reservationService.getDetails(this.reservationId as string).pipe(
-          map(reservation => {
-            this.form.patchValue(reservation);
-          })
-        );
+        return this.mapData();
       })
     ).subscribe();
+  }
+
+  mapData(): Observable<void> {
+    return this.reservationService.getDetails(this.reservationId as string).pipe(
+      map(reservation => {
+        if (reservation.vehicles.length > 0) {
+          reservation.vehicles.forEach(_ => this.createVehicleOptionForm());
+          const disposableVehicles = this.vehicles.getValue() as IOption[];
+          this.vehicles.next([...reservation.vehicles, ...disposableVehicles]);
+        }
+        this.form.patchValue(reservation);
+      })
+    );
   }
 
   private mapStatuses() {
@@ -69,14 +78,7 @@ export class ReservationEditComponent implements OnInit {
   }
 
   private getVehicles() {
-    this.vehicles = this.vehicleService.getList().pipe(map((vehicles) => {
-      return vehicles.map(vehicle => {
-        return {
-          name: vehicle.name,
-          value: vehicle.id
-        } as IOption;
-      }) as IOption[];
-    }));
+    this.vehicleService.getDisposableVehicles().pipe(map(vehicles => this.vehicles.next(vehicles))).subscribe();
   }
 
   private createForm(): FormGroup {
@@ -85,7 +87,14 @@ export class ReservationEditComponent implements OnInit {
       rentalExpirationDate: [null, Validators.required],
       status: [null, [Validators.required]],
       customerId: [null, [Validators.required]],
-      vehicleIds: [this.formBuilder.array([])]
+      vehicles: [this.formBuilder.array([])]
+    });
+  }
+
+  private createVehicleOptionForm() {
+    return this.formBuilder.group({
+      name: [null],
+      value: [null]
     });
   }
 
