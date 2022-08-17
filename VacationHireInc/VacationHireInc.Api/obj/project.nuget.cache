@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZN3pAv6E3BhTYqSrPpqOytvS/qCANRGtLrdp0lKrAoQyLxuEMn+ceusdzofgusps36Ph1WDVRXydFhD9KY6HhA==",
+  "dgSpecHash": "3w7u9uMi9p5UyOIS05u/8mU1emZS0Q/pkzlS96zTvKwYYceyaqJ7BVHDbuaHpN1I9HzZN+PG5TMXyAuzCvdHDw==",
   "success": true,
-  "projectFilePath": "/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Api/VacationHireInc.Api.csproj",
+  "projectFilePath": "/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Api/VacationHireInc.Api.csproj",
   "expectedPackageFiles": [
     "/Users/tenuvladgabriel/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.28/microsoft.aspnetcore.jsonpatch.3.1.28.nupkg.sha512",
     "/Users/tenuvladgabriel/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.28/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.28.nupkg.sha512",

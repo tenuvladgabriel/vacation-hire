@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Data/VacationHireInc.Data.csproj": {}
+    "/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Data/VacationHireInc.Data.csproj": {}
   },
   "projects": {
-    "/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Data/VacationHireInc.Data.csproj": {
+    "/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Data/VacationHireInc.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Data/VacationHireInc.Data.csproj",
+        "projectUniqueName": "/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Data/VacationHireInc.Data.csproj",
         "projectName": "VacationHireInc.Data",
-        "projectPath": "/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Data/VacationHireInc.Data.csproj",
+        "projectPath": "/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Data/VacationHireInc.Data.csproj",
         "packagesPath": "/Users/tenuvladgabriel/.nuget/packages/",
-        "outputPath": "/Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Data/obj/",
+        "outputPath": "/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tenuvladgabriel/.nuget/NuGet/NuGet.Config"

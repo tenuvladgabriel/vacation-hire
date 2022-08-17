@@ -23,3 +23,16 @@
 /Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.dll
 /Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.pdb
 /Users/tenuvladgabriel/Desktop/Project/vacation-hire/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Http.dll
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Business.deps.json
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Business.dll
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Business.pdb
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Http.dll
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Data.dll
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/bin/Debug/netcoreapp3.1/VacationHireInc.Data.pdb
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csprojAssemblyReference.cache
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.AssemblyInfoInputs.cache
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.AssemblyInfo.cs
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csproj.CoreCompileInputs.cache
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.csproj.CopyComplete
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.dll
+/Users/tenuvladgabriel/Desktop/Project/vacation-hiree/VacationHireInc/VacationHireInc.Business/obj/Debug/netcoreapp3.1/VacationHireInc.Business.pdb
