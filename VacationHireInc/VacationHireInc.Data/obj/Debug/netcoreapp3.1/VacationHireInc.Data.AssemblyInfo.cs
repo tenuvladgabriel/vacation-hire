@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VacationHireInc.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f664a4e0c5eba3808d972c7134b6b1351bb2278")]
 [assembly: System.Reflection.AssemblyProductAttribute("VacationHireInc.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VacationHireInc.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
